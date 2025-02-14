@@ -46,13 +46,6 @@ Todas as operações foram baseadas nas video-aulas do antigo canal "Dev-Samurai
 - **URL:** `/customers/:id`
 
 
-5. **Abra o Insomnia e teste os endpoints!**
-
-## 🛠 Melhorias Futuras
-- [ ] Adicionar validação de dados
-- [ ] Implementar banco de dados
-- [ ] Criar uma interface frontend
-
 ---
 📌 *Este projeto foi feito para fins de aprendizado e prática.* 😊
 
