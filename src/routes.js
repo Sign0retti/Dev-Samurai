@@ -1,7 +1,7 @@
-const { Router } = require("express");
+import { Router } from "express";
 const routes = new Router();
 
-const customers = require('./app/customer/CustommersConstrollers')
+import customers from "./app/controllers/CustomersController";
 
 
 //Cada route pega diretamente do diretorio CustomersControllers o método pra cada operação.
@@ -11,4 +11,4 @@ routes.post("/customers", customers.create);
 routes.put("/customers/Id", customers.update);
 routes.delete("/customers/Id", customers.destroy);
 
-module.exports = routes;
+export default routes;
