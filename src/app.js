@@ -1,9 +1,7 @@
-//Aulas utilizadas neste repositório:
-//Aula 0601 - Configurando uma estrutura moderna
+// Aulas utilizadas neste repositório:
+// Aula 0601 - Configurando uma estrutura moderna
 
 import express from "express"
-import routes from "./routes";
-
 import routes from "./routes";
 
 class App {
