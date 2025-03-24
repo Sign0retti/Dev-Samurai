@@ -7,7 +7,7 @@ let customers = [
 
 
 class  CustomerController{
-    
+
     //Listagem dos Registros
     index(req, res){
         server.get("/customers", (req,res) =>{
@@ -42,14 +42,14 @@ class  CustomerController{
         server.put("/customers/:id", (req,res) =>{
             const id = parseInt(req.params.id);
             const{name, site} = req.body;
-        
+
             const index = customers.findIndex(item => item.id === id);
             const status = index >= 0 ? 200 : 404;
-        
+
             if(index >= 0){
                 customers[index] = {id : parseInt(id), name, site};
             }
-        
+
             return res.status(status).json(customers[index]);
         });
 
@@ -61,11 +61,11 @@ class  CustomerController{
             const id = parseInt(req.params.id);
             const index = customers.findIndex(item => item.id === id);
             const status = index >= 0 ? 200 : 404;
-        
+
             if(index >= 0){
                 customers.splice(index,1)
             }
-        
+
             return res.status(status).json();
         });
     }
